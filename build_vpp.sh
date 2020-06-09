@@ -4,7 +4,7 @@ set -e  # exit on the first command failure
 
 apt-get install -y python-cffi python-pycparser devscripts debhelper dpkg-dev dkms
 
-rm -r ./build
+rm -r ./build || true
 git clone -b v20.05 https://github.com/RaveNoX/vppsb.git ./build/vppsb
 git clone -b v20.05 https://github.com/FDio/vpp.git ./build/vpp
 
